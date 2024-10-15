@@ -1,0 +1,40 @@
+body {
+    background: url('BG.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.business-card {
+    width: 90%; /* Ka dhig mid ku fidsan shaashadda */
+    max-width: 14.83cm; 
+    height: auto; 
+    aspect-ratio: 14.83 / 8.48; /* Cabirka saxda ah ee card-ka */
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Qaabka sawirka */
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .business-card {
+        padding: 3%; /* Yaree "padding"-ka si uu ugu dhawaado gidaarka */
+    }
+}
+
+@media (max-width: 480px) {
+    .business-card {
+        padding: 5%; /* Yaree "padding"-ka si uu ugu dhawaado gidaarka */
+    }
+}
