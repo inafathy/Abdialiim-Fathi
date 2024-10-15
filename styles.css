@@ -18,6 +18,11 @@ body {
     overflow: hidden;
     position: relative;
 }
+.business-card {
+    margin: 0 auto;
+    padding: 10px; /* Add some padding if necessary */
+}
+
 
 /* Qaabka sawirka */
 .card-image {
@@ -29,9 +34,11 @@ body {
 /* Responsive design adjustments */
 @media (max-width: 768px) {
     .business-card {
-        padding: 3%; /* Yaree "padding"-ka si uu ugu dhawaado gidaarka */
+        width: 90%;
+        height: auto;
     }
 }
+
 
 @media (max-width: 480px) {
     .business-card {
